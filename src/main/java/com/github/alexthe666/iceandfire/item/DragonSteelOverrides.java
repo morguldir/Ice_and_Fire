@@ -53,15 +53,15 @@ public interface DragonSteelOverrides<T extends TieredItem> {
     }
 
     default boolean isDragonsteelFire(Tier tier) {
-        return tier.getRepairIngredient() == Ingredient.of(IafItemRegistry.DRAGONSTEEL_FIRE_INGOT);
+        return tier.getRepairIngredient() == Ingredient.of(IafItemRegistry.DRAGONSTEEL_FIRE_INGOT.get());
     }
 
     default boolean isDragonsteelIce(Tier tier) {
-        return tier.getRepairIngredient() == Ingredient.of(IafItemRegistry.DRAGONSTEEL_ICE_INGOT);
+        return tier.getRepairIngredient() == Ingredient.of(IafItemRegistry.DRAGONSTEEL_ICE_INGOT.get());
     }
 
     default boolean isDragonsteelLightning(Tier tier) {
-        return tier.getRepairIngredient() == Ingredient.of(IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT);
+        return tier.getRepairIngredient() == Ingredient.of(IafItemRegistry.DRAGONSTEEL_LIGHTNING_INGOT.get());
     }
 
     default void hurtEnemy(T item, ItemStack stack, LivingEntity target, LivingEntity attacker) {
