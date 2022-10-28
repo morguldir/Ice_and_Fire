@@ -21,8 +21,6 @@ public class BlockDreadSpawner extends SpawnerBlock implements IDreadBlock {
                 .noOcclusion()
                 .dynamicShape()
         );
-
-        this.setRegistryName(IceAndFire.MODID, "dread_spawner");
     }
 
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
